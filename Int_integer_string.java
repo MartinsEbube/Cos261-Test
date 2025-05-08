@@ -1,11 +1,11 @@
-// 5. int vs Integer vs String demo
-public class TypeDemo {
+public class DataTypeDemo {
     public static void main(String[] args) {
-        int a = 5;                // primitive
-        Integer b = 10;           // wrapper class
-        String c = "15";          // string
+        int a = 10;
+        Integer b = 5;
+        String c = "5";
 
-        System.out.println(a + b);      // 15
-        System.out.println(c + a);      // 155 (concatenation)
+        System.out.println(a + b);       // This adds numbers: 10 + 5 = 15
+        System.out.println(a + b + c);   // This first adds 10 + 5 = 15, then appends "5" → "155"
+        System.out.println(c + a + b);   // This does "5" + 10 + 5 → "5105"
     }
 }
